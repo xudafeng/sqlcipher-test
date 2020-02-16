@@ -29,6 +29,8 @@ db.models.Test1 = Test1;
 (async () => {
   await db.sync();
   const s = 's';
-  const res = await db.driver.query(`pragma key = '${s}'`);
+  let res = await db.driver.query(`pragma key = '${s}'`);
+  console.log(res);
+  res = await db.driver.query(`pragma key`);
   console.log(res);
 })();
