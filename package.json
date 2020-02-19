@@ -16,7 +16,10 @@
     "git-contributor": "*",
     "husky": "*",
     "mocha": "*",
-    "nyc": "*"
+    "nyc": "*",
+    "electron": "7.1.10",
+    "electron-builder": "22.3.2",
+    "electron-rebuild": "^1.8.8"
   },
   "scripts": {
     "test": "nyc --reporter=lcov --reporter=text mocha",
