@@ -33,4 +33,9 @@ db.models.Test1 = Test1;
   console.log(res);
   res = await db.driver.query(`pragma key`);
   console.log(res);
+  await db.models.Test1.create({
+    name: 'test name',
+  });
+  res = await db.models.Test1.findOne();
+  console.log(res);
 })();

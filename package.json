@@ -7,7 +7,7 @@
     "url": "git://github.com/xudafeng/sqlcipher-test.git"
   },
   "dependencies": {
-    "leoric": "0.5.0-alpha.17",
+    "leoric": "*",
     "sqlite3": "4.1.1"
   },
   "devDependencies": {
