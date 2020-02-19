@@ -27,10 +27,10 @@ const Test1 = initModel(db);
 db.models.Test1 = Test1;
 
 (async () => {
-  await db.sync();
   const s = 's';
   let res = await db.driver.query(`pragma key = '${s}'`);
   console.log(res);
+  await db.sync();
   res = await db.driver.query(`pragma key`);
   console.log(res);
   await db.models.Test1.create({
