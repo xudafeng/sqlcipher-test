@@ -46,7 +46,7 @@ $ docker run --rm -ti \
   -v ~/.cache/electron-builder:/root/.cache/electron-builder \
   electronuserland/builder:wine
 
-$ ./node_modules/.bin/electron-rebuild -f -w sqlite3
+$ DEBUG=electron-rebuild ./node_modules/.bin/electron-rebuild -f -w sqlite3
 
 $ ls -l ./node_modules/sqlite3/lib/binding
 ```
